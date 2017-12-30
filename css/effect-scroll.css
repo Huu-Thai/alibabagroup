@@ -1,0 +1,119 @@
+@keyframes effect-logo{
+	from {transform: rotate3d(0,0,0,0)}
+	to {transform: rotate3d(0,1,0, 1turn)}
+}
+@-webkit-keyframes effect-logo{
+	from {transform: rotate3d(0,0,0,0)}
+	to {transform: rotate3d(0,1,0, 1turn)}
+}
+@keyframes effect-slider-text{
+	from {left:0;transform: translate(-1000px, 0);transform:skew(-45deg,-45deg); }
+	to {left: 30%;transform: translate(100px, 0); transform:skew(0,0);}
+}
+@-webkit-keyframes effect-slider-text{
+	from {left:0;transform: translate(-1000px, 0);transform:skew(-45deg,-45deg); }
+	to {left: 30%;transform: translate(100px, 0); transform:skew(0,0);}
+}
+@keyframes effect-about-us-bt-left{
+	from {transform: translate(-100%, 10px);opacity: 0.2;}
+	to {transform: translate(0%, 0);opacity: 1}
+}
+@-webkit-keyframes effect-about-us-bt-left{
+	from {transform: translate(-100%, 10px);opacity: 0.2;}
+	to {transform: translate(0%, 0);opacity: 1}
+}
+@keyframes effect-about-us-bt-right{
+	from {transform: translate(100%, 10px) rotate(-45deg);}
+	to {transform: translate(0, 0) rotate(0);}
+}
+@-webkit-keyframes effect-about-us-bt-right{
+	from {transform: translate(100%, 10px) rotate(-45deg);}
+	to {transform: translate(0, 0) rotate(0);}
+}
+@keyframes effect-view-more{
+	from {transform: translate3d(0, -100%, 50px);}
+	to {transform: translate3d(0, 0, 0);}
+}
+@-webkit-keyframes effect-view-more{
+	from {transform: translate3d(0, -100%, 50px);}
+	to {transform: translate3d(0, 0, 0);}
+}
+@keyframes effect-title{
+	from {transform: scale(0, 0)}
+	to {transform: scale(1, 1)}
+}
+@-webkit-keyframes effect-title{
+	from {transform: scale(0, 0)}
+	to {transform: scale(1, 1)}
+}
+@keyframes effect-video{
+	from {transform: scale(0, 1);}
+	to {transform: scale(1, 1)}
+}
+@-webkit-keyframes effect-video{
+	from {transform: scale(0, 1);}
+	to {transform: scale(1, 1)}
+}
+
+.effect-logo{
+	animation-name: effect-logo;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	-webkit-animation-name: effect-logo;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-timing-function: ease-in-out;
+	visibility: visible;
+}
+.effect-slider-text {
+	animation-name: effect-slider-text;
+	animation-timing-function: ease-in-out;
+	animation-duration: 3s;
+	-webkit-animation-name: effect-slider-text;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 3s;
+}
+.effect-gallery-top, .effect-about-us-top, .effect-review-top{
+	animation-name: effect-title;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	-webkit-animation-name: effect-title;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 2s;
+}
+.effect-about-us-bt-left{
+	-webkit-animation-name: effect-about-us-bt-left;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 2s;
+}
+.effect-about-us-bt-right{
+	animation-name: effect-about-us-bt-right;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: effect-about-us-bt-right;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.effect-about-us-title{
+	animation-name: effect-about-us-bt-left;
+	animation-duration: 0.5s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: effect-about-us-bt-left;
+	-webkit-animation-duration: 0.5s;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.effect-about-us-content {
+	animation-name: effect-about-us-bt-left;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-name: effect-about-us-bt-left;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-in-out;
+}
+.effect-video {
+	animation-name: effect-video;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in;
+	-webkit-animation-name: effect-video;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-timing-function: ease-in;
+}

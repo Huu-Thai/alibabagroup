@@ -1,0 +1,112 @@
+.review-customer {
+	box-sizing: border-box;
+	background-image: url('../images/banner3.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	// background-position: 0 0;
+	background-size: 100% 100%;
+	width: 100%;
+	overflow: hidden;
+	padding: 0 0 80px;
+	// transition: all 2.5s;
+	// -webkit-transition: all 2.5s;
+	// -moz-transition: all 2.5s;
+
+	.review-top{
+		h1 {
+			color: #fff;
+		}
+	}
+	.review-form {
+		width: 65%;
+		margin: 0 auto;
+		input[type="text"]::-webkit-input-placeholder {
+			color: #fff;
+
+			&::first-letter{
+				text-transform: capitalize;
+			}
+		}
+		input[type="text"]::-moz-input-placeholder {
+			color: #fff;
+			&::first-letter{
+				text-transform: capitalize;
+			}
+		}
+		input[type="email"]::-webkit-input-placeholder{
+			color: #fff;
+			&::first-letter{
+				text-transform: capitalize;
+			}
+		}
+		input[type="email"]::-moz-input-placeholder{
+			color: #fff;
+			&::first-letter{
+				text-transform: capitalize;
+			}
+		}
+		input:focus{
+			color: red;
+		}
+		.info-customer {
+			padding-left: 0;
+			padding-right: 5px;
+			margin-bottom: 10px;
+
+			input {
+				caret-color: #fff;
+				width: 100%;
+				min-width: 100px;
+				border: none;
+				background-color: rgba(126, 137, 159, 0.4588235294117647);
+				padding: 10px;
+				margin-bottom: 10px;
+				font-size: 18px;
+				padding: 15px;
+				color: #fff;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+			input:focus{
+				color: #fff;
+			}
+		}
+
+		.cnt-customer{
+			padding-left: 0;
+			padding-right: 0;
+			textarea{
+				caret-color: #fff;
+				width: 100%;
+				min-width: 100px;
+				border: none;
+				background-color: rgba(126, 137, 159, 0.4588235294117647);
+				padding: 10px;
+				margin-bottom: 5px;
+				height: 120px;
+				font-size: 18px;
+				padding: 15px;
+				color: #fff;
+			}
+			textarea::-webkit-input-placeholder {
+				color: #fff;
+			}
+			textarea:-moz-placeholder {
+				color: #fff;
+			}
+			input {
+				width: 100%;
+				min-width: 100px;
+				border: none;
+				background-color: #ec1d23;
+				text-align:center;
+				color: #fff;
+				font-weight: 500;
+				font-size: 18px;
+				padding: 15px;
+			}
+		}
+	}
+
+}

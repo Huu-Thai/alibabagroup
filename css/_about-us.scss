@@ -1,0 +1,83 @@
+.about-us{
+	background-image: url(../images/background/network.png);
+    background-repeat: no-repeat;
+    background-size: 75% auto;
+    background-position-y: 0%;
+	.about-us-bottom{
+		padding:0;
+		.about-us-bt-left{
+			text-align: center;
+			position: relative;
+			padding-left: 0;
+			h1{
+				text-shadow: -0.4px 0.4px #858384;
+				text-align: justify;
+				color: #262626;
+				font-size: 22px;
+				text-transform: capitalize;
+				margin-top: 7px;
+				margin-bottom: 10px;
+				font-weight: 500;
+			}
+			p{	
+				text-align: justify;
+				color: #474747;
+				text-indent: 10px;
+				text-overflow: ellipsis;
+				line-height: 22px;
+				font-size: 18px;
+
+			}
+			.btn-view-more{
+				
+				position: absolute;
+				left: 0;
+				right:0;
+				bottom: 10px;
+				text-align: center;
+				.view-more{
+					// margin-top: 25px;
+				}
+			}
+			
+		}
+	}
+	.about-us-bt-right{
+		padding-right: 0;
+		> img{
+			width: 100%;
+			height: auto;
+			max-height: 230px;
+		}
+		.about-us-thmb{
+			margin-top: 5px;
+			padding: 0;
+			> div{
+				padding: 0px;
+				// margin-left: 5px;
+				&:first-child{
+					// margin-left: 0;
+				}
+			}
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.about-us-img-scale{
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	position: fixed;
+	z-index: 10;
+	top:0;
+	left: 0;
+	padding: 50px 200px;
+	text-align: center;
+	img{
+		max-height: 400px;
+		z-index: 10;
+		width: 100%;
+	}
+}

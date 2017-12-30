@@ -1,0 +1,29 @@
+.banner {
+	// background-image: url('../images/ab-banner.png');
+	background-repeat: no-repeat;
+	text-align: center;
+	background-size: 100% 100%;
+	width: 100%;
+	// min-height: 400px;
+	overflow: hidden;
+	padding: 100px 0 50px;
+
+	.breadcrumb{
+		margin: 0 auto;
+		background-color: rgba(245, 245, 245, 0) !important;
+		.active{
+			color:#2b2525;
+		}
+		li{
+			// display: inline-block;
+			// margin-left: 10px;
+			// margin-right: 10px;
+			a{
+				height: 40px;
+				color: $menu;
+				font-size: 15px;
+				font-weight: 600;
+			}
+		}
+	}
+}

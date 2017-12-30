@@ -1,0 +1,243 @@
+.recruitment{
+	.recruit-left{
+
+		.recruit-title{
+			padding:0;
+			padding-bottom: 10px;
+			border-bottom: 3px solid $redLight;
+
+			h1{
+				color: #000;
+				&:first-letter{
+					text-transform: uppercase;
+				}
+				font-size: 25px;
+				float: left;
+			}
+			.recruit-close{
+				float: right;
+				color: #fff;
+				background-color: $redLight;
+				border-radius: 100%;
+				cursor: pointer;
+				min-height: 30px;
+				min-width: 30px;
+				line-height: 30px;
+				text-align: center;
+				span{
+					color: #fff;
+				}
+				&:hover{
+					span{
+						
+						color: #535353;
+					}
+				}
+			}
+		}
+		.recruit-list-news{
+			padding:0;
+			.recruit-news{
+				border-bottom: 1px solid #eee;
+				padding: 10px 0;
+				.recruit-news-top{
+					h2{
+						text-transform: capitalize;
+						font-size: 22px;
+						cursor: pointer;
+						&:hover{
+							color: $redLight;
+						}
+					}
+				}
+				.recruit-news-bottom{
+					margin-top: 20px;
+					span,p{
+						&:first-letter{
+							text-transform: capitalize;
+						}
+					}
+					.recruit-news-bt-left{
+						padding: 0;
+						p{
+							span{
+								text-transform: capitalize;
+							}
+						}
+					}
+					.recruit-news-bt-right{
+						padding:0;
+						text-align: right;
+						> span, time{
+							color: $redLight;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	.recruit-right{
+		.recruit-rgt-title{
+			box-sizing: border-box;
+			img{
+
+				margin-right: 20px;
+				float: left;
+				width: 35px;
+			}
+			h1{
+				font-size: 20px;
+				line-height: 40px;
+				text-transform: uppercase;
+			}
+		}
+		.recruit-offer{
+			ul{
+				li{
+					line-height: 30px;
+					word-break: break-all;
+					font-size: 15px;
+					span{
+						&:first-letter{
+							text-transform: capitalize;
+						}
+					}
+				}
+			}
+		}
+		.recruit-step-list{
+			@extend .recruit-offer;
+			li{
+				address{
+					color: aqua;
+					margin-bottom: 0;
+				}
+				button{
+					padding: 3px 6px;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.recruit-step {
+			margin-top: 40px;
+		}
+	}
+}
+.paginate{
+	ul{
+
+		li{
+			a{
+				border: none;
+				color: #535353;
+				&:hover{
+					color: $redLight;
+				}
+			}
+			&:last-child, &:first-child{
+				// a{
+				// 	padding-top: 0;
+				// 	padding-bottom: 0;
+				// }
+			}
+			.page-act{
+				color: $redLight;
+			}
+		}
+	}
+	
+	.first-page, .last-page{
+		background-repeat: no-repeat;
+		background-size: 100% 100%;;
+		width: 20px;
+		height: 25px;
+		display: inline-block;
+
+	}
+	.first-page{
+		background-image: url('../images/arrow-left.png');
+	}
+	.last-page{
+		
+		background-image: url('../images/arrow-right.png');
+	}
+}
+.recruit-modal {
+
+	.modal-content{
+		position:relative;
+		background-color: rgba(0, 0, 0, 0.6);
+		box-shadow: 0 0px 0px rgba(0,0,0,0.5);
+		border-radius: 0;
+		.modal-header{
+			border: none;
+			padding-bottom: 0;
+			padding-right: 30px;
+			padding-left: 30px;
+			.modal-title{
+				color: #fff;
+				border-bottom: 1px solid #e5e5e5;
+				padding-bottom: 15px;
+			}
+			.close{
+				vertical-align: text-top;
+				opacity: 1;
+				span{
+					color: #fff !important;
+					font-size: 30px;
+					position: absolute;
+					right: -16px;
+					top: -18px;
+					border-radius: 100%;
+					background-color: $redLight;
+					height: 40px;
+					width: 40px;
+					font-weight: 400;
+					display: block;
+					font-size: 35px;
+				}
+			}
+		}
+		.modal-body{
+			padding-right: 30px;
+			padding-left: 30px;
+			p{
+				&:first-letter{
+					text-transform: capitalize;
+				}
+				color: #fff;
+				span{
+					color: #fff !important;
+				}
+			}
+		}
+		.modal-footer{
+			text-align: left;
+			border-top: none;
+			padding-top:0;
+			padding-right: 30px;
+			padding-left: 30px;
+			p{
+				padding-top: 15px;
+				border-top: 1px solid #e5e5e5;
+				color: #fff;
+				&:first-letter{
+					text-transform: capitalize;
+				}
+				span:first-child{
+					color: aqua;
+				}
+				span:last-child{
+					text-transform: capitalize;
+					color: #fff;
+				}
+				button{
+					padding: 3px 6px;
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}

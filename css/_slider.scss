@@ -1,0 +1,64 @@
+// .active-text{
+// 	right: 0;
+// }
+.slider {
+	position: relative;
+	overflow: hidden;
+	visibility: visible;
+	.item{
+		transition: all 0.5s;
+		vertical-align: middle;
+		img{
+			width: 100%;
+		}
+		.slider-text{
+			position: absolute;
+			top: 42%;
+			left: 0;
+			right: 0;
+			text-align: center;
+			transition: all 3s;
+			h1{	
+				color: #ec1d23;
+				font-family: 'semi_bold';
+				
+				text-transform: uppercase;
+				font-size: 50px;
+			}
+			h2{
+				color: #302e2f;
+				margin-top: 12px;
+				margin-bottom: 20px;
+				font-family: 'bold';
+				font-size: 25px;
+				text-transform: capitalize;
+			}
+		}
+	}
+	
+	.owl-stage {
+		transition-duration: 2s!important;
+		-webkit-transition-duration: 2s!important;
+		-moz-transition-duration: 2s!important;
+	}
+}
+.owl-theme .owl-nav [class*=owl-]{
+	background-color: initial !important;
+}
+.btn-prev{
+	left: 0;
+	background-image: url('../images/previous.png') !important;
+}
+.btn-next{
+	right:0;
+	background-image: url('../images/next.png') !important;
+}
+.btn-prev,.btn-next{
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	background-size: 100% 100% !important;
+	width: 40px;
+	height: 40px;
+
+}

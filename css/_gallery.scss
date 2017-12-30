@@ -1,0 +1,30 @@
+
+.gallery{
+	box-sizing: border-box;
+	position: relative;
+	background-image: url('../images/background/network.png');
+	background-repeat: no-repeat;
+	background-size: 75% auto;
+	background-position-x: 262%;
+	.gallery-list{
+
+		.gallery-img {
+			padding:0 5px 5px 0;
+			
+			transition: all 0.5s ease-in-out;
+			-webkit-transition: all 0.5s ease-in-out;
+			-moz-transition: all 0.5s ease-in-out;
+			a{
+				// overflow: hidden;
+				// display: inline-block;
+				position: relative;
+				img{
+					// max-height: 216px;
+					width: 100%;
+					// border: 1px solid #36aee0;
+				}
+			}
+			
+		}
+	}
+}

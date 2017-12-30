@@ -1,0 +1,27 @@
+.video{
+	text-align: center;
+	width: 100%;
+	position: relative;
+	margin-top: 50px;
+	video{
+		width: 100%;
+	}
+	.video-play {
+		width: 17%;
+		box-sizing: border-box;
+		position: absolute;
+		top: 33%;
+		left: 41%;
+		margin: 0 auto;
+		img{
+			width: 40%;
+		}
+		h1{
+			margin-top: 10px;
+			color: red;
+			font-size: 30px;
+			font-family: regular;
+			text-transform: capitalize
+		}
+	}
+}

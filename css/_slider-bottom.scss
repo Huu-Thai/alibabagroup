@@ -1,0 +1,126 @@
+
+.slider-bottom {
+	// overflow: hidden;
+	position: relative;
+	// width: 100%;
+	min-height:180px;
+	z-index: 9;
+	display: block;
+
+	@each $i, $bg in (1: $slider_bt_1, 2: $slider_bt_2, 3: $slider_bt_3){
+		.slider-design:nth-child(#{$i}){
+			background-color: #{$bg};
+			
+			left: $i * 33.33% - 33.33%;
+
+		}
+	}
+	@each $i, $bg in (1: #c50404, 2: #c50404, 3: #c50404){
+		.slider-design:nth-child(#{$i}){
+
+			&:hover{
+				background-color: #{$bg};
+			}
+		}
+	}
+	@each $i, $bg in (1: 'icon-design.png', 2: 'icon-html.png', 3: 'icon-share.png'){
+		.slider-design:nth-child(#{$i}) .slider-icon{
+			background-image: url('../images/#{$bg}');
+		}
+	}
+	@keyframes slider-hover{
+		0% {height: 100px}
+		100% {height: 0px}
+		
+	}
+	.slider-design {
+		position:absolute;
+		top:0px;
+		z-index: 9;
+		box-sizing: border-box;
+		text-align: center;
+		margin: 0 auto;
+		height: 180px;
+
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		.effect-up{
+			width: 100%;
+			height: 22px;
+
+			transition: all 1.5s;
+			-webkit-transition: all 1.5s;
+			-moz-transition: all 1.5s;
+		}
+		.slider-icon{
+
+			margin: 0px auto 13px;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-position: 0 0;
+			width: 20%;
+			height: 74px;
+			max-height: 74px;
+
+		}
+		a{
+			h2{
+				color: #fff;
+				margin-top: 8px;
+				text-transform: uppercase;
+				margin-bottom: 6px;
+				font-size: 19px;
+			}
+		}
+		
+		p{
+			color: #fff;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+		
+		&:hover{
+			top:-40px;
+			height: 220px;
+
+			.effect-up{
+				
+				height: 20px;
+
+			}
+		}
+	}
+}
+.slider-bottom-mobile{
+	display: none;
+	@each $i, $bg in (1: $slider_bt_1, 2: $slider_bt_2, 3: $slider_bt_3){
+		.slider-design-mobile:nth-child(#{$i}){
+			background-color: #{$bg};
+		}
+	}
+	.slider-design-mobile {
+		padding: 10px;
+		img{
+			width: 5%;
+			min-width: 40px;
+			margin-right: 10px;
+			float: left;
+		}
+		.slider-bt-text{
+			h2{
+				text-transform: uppercase;
+				font-size: 20px;
+			}
+			h2,p{
+				color: #fff;
+				margin-left: 50px;
+			}
+			p{
+				font-size: 16px;
+				text-transform: capitalize;
+				margin-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.service-cnt-left{
+	box-sizing: border-box;
+	.service-title{
+		padding: 0;
+		padding-bottom: 10px;
+		border-bottom: 3px solid #ec1d23;
+		color: #000;
+		font-size: 25px;
+		&:first-letter{
+			text-transform: capitalize;
+		}
+	}
+	.service-cnt-main{
+		p{
+			text-align: justify;
+			font-size: 16px;
+			text-indent: 30px;
+		}
+		img{
+			width: 100% !important;
+			height: auto !important;
+			display: block;
+		}
+	}
+	img{
+		width: 100%;
+	}
+}
+.service-cnt-right{
+	float: right;
+	@each $i, $bg in (1: $slider_bt_1, 2: $slider_bt_2, 3: $slider_bt_3){
+		.svc-slider-design:nth-child(#{$i}){
+			background-color: #{$bg};
+		}
+	}
+	@each $i, $bg in (1: #c50404, 2: #c50404, 3: #c50404){
+		.svc-slider-design:nth-child(#{$i}){
+
+			&:hover{
+				background-color: #{$bg};
+			}
+		}
+	}
+	@each $i, $bg in (1: 'icon-design.png', 2: 'icon-html.png', 3: 'icon-share.png'){
+		.svc-slider-design:nth-child(#{$i}) .slider-icon{
+			background-image: url('../images/#{$bg}');
+		}
+	}
+	> a{
+		display: block;
+	}
+	.svc-slider-design {
+		
+		box-sizing: border-box;
+		text-align: center;
+		margin: 0 auto;
+
+		transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		margin-top: 5px;
+		&:first-child{
+			margin-top: 0;
+		}
+		img{
+			margin-top: 20px;
+			width: 22%;
+			min-height: 40px;
+		}
+		a{
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		
+		p{
+			color: #fff;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+		.service-main-text{
+			margin-top: 20px;
+		}
+	}
+	.svc-active {
+		position: relative;
+		&::before{
+			position: absolute;
+			left: -15px;
+			top: 50%;
+			content: '';
+			border-right: 15px solid #be0c0c;
+			border-bottom: 10px solid transparent;
+			border-top: 10px solid transparent;
+		}
+		&::after{
+			position: absolute;
+			left:-7px;
+			top: 54.2%;
+			content: '';
+			width: 5px;
+			height: 5px;
+			background-color: #fff;
+			border-radius: 100%;
+		}
+	}
+	.service-dropdown {
+		background-color: $slider_bt_1;
+		padding: 0;
+		display: none;
+		.service-main{
+			padding: 10px;
+			img{
+				float: left;
+				margin-top: 0 !important;
+				margin-right: 15px;
+				width: 7% !important;
+				min-width: 40px;
+			}
+			p{
+				margin-bottom: 0;
+			}
+		}
+		.svc-btn-dropdown{
+			text-align: right;
+			padding-top: 10px;
+			img{
+				width: 50%;
+				cursor: pointer;
+				min-width: 30px;
+			}
+		}
+	}
+	.service-main-text {
+		h2{
+			text-transform: uppercase;
+			font-size: 25px;
+			color: #fff;
+		}
+		p{
+			text-transform: capitalize;
+			color: #fff;
+		}
+	}
+	.service-list-mobile{
+		display: none;
+	}
+}
